@@ -1,0 +1,13 @@
+--- DISCLAIMER ---
+- This software is compiled with a Linux OS!
+- This software requires 64 kByte instruction memory (ROM)!
+- This software requires 32 kByte internal data memory (RAM)!
+- Please set the corresponding parameters accordingly in your NEORV32 FPGA project!
+--- END OF DISCLAIMER ---
+
+HOW TO BUILD:
+1.) Install the recommended NEORV32 compiler toolchain from https://stnolting.github.io/neorv32/ug/#_software_toolchain_setup
+2.) Open this folder with the terminal
+3.) Start the make process with the following command:
+      make USER_FLAGS+="-Wl,--defsym,__neorv32_ram_size=32k -Wl,--defsym,__neorv32_rom_size=64k" clean_all image
+4.) The toolchain successfully compiled the binary file main.elf and the binary image VHDL file neorv32_application_image.vhd

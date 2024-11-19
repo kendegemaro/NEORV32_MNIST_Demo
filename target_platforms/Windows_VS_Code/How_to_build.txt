@@ -1,0 +1,10 @@
+--- DISCLAIMER ---
+If you do not wish to build the Software yourself, a precompiled executable can be found in the "precompiled"-Folder. Use at own Risk!
+--- END OF DISCLAIMER ---
+
+HOW TO BUILD:
+1.) Install VS Code 2019 and the C/C++ VS Code extension
+2.) Open "Developer Command Prompt for VS Code 2019" in this Folder
+3.) Execute the build process with the following command:
+      cl.exe /Zi /EHsc /nologo /FS /Fe MNIST_NeuralNet_test_suite.c MNIST_NeuralNet.c -I MNIST_NeuralNet.h ./include/*.c
+4.) You can launch the compiled software with the file "MNIST_NeuralNet_test_suite.exe"
